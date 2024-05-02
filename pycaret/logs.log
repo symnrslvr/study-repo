@@ -39383,3 +39383,41 @@ Returning the number of logical cores instead. You can silence this warning by s
 2024-05-03 00:33:58,622:INFO:Fitting TSNE()
 2024-05-03 00:33:59,315:INFO:Sorting dataframe
 2024-05-03 00:33:59,315:INFO:Rendering Visual
+2024-05-03 00:39:53,408:INFO:Visual Rendered Successfully
+2024-05-03 00:39:53,536:INFO:plot_model() successfully completed......................................
+2024-05-03 00:39:53,536:INFO:Initializing assign_model()
+2024-05-03 00:39:53,536:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x000001AD51533190>, model=KMeans(n_clusters=4, random_state=2988), transformation=False, score=True, verbose=True)
+2024-05-03 00:39:53,536:INFO:Checking exceptions
+2024-05-03 00:39:53,536:INFO:Determining Trained Model
+2024-05-03 00:39:53,536:INFO:Trained Model : K-Means Clustering
+2024-05-03 00:39:53,536:INFO:Copying data
+2024-05-03 00:39:53,543:INFO:(182, 9)
+2024-05-03 00:39:53,543:INFO:assign_model() successfully completed......................................
+2024-05-03 00:39:53,544:INFO:Initializing predict_model()
+2024-05-03 00:39:53,544:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x000001AD51533190>, estimator=KMeans(n_clusters=4, random_state=2988), ml_usecase=None)
+2024-05-03 00:39:53,561:INFO:Initializing save_model()
+2024-05-03 00:39:53,561:INFO:save_model(model=KMeans(n_clusters=4, random_state=2988), model_name=kmeans_pipeline, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\seyzu\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Jsc', 'Voc', 'FF', 'Efficiency',
+                                             'Sr', 'Sp', 'Temp', 'Class'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize',
+                 TransformerWrapper(transformer=StandardScaler()))]), verbose=True, use_case=MLUsecase.CLUSTERING, kwargs={})
+2024-05-03 00:39:53,561:INFO:Adding model into prep_pipe
+2024-05-03 00:39:53,564:INFO:kmeans_pipeline.pkl saved in current working directory
+2024-05-03 00:39:53,569:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Jsc', 'Voc', 'FF', 'Efficiency',
+                                             'Sr', 'Sp', 'Temp', 'Class'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model', KMeans(n_clusters=4, random_state=2988))])
+2024-05-03 00:39:53,569:INFO:save_model() successfully completed......................................
+2024-05-03 00:39:53,682:INFO:Initializing load_model()
+2024-05-03 00:39:53,682:INFO:load_model(model_name=kmeans_pipeline, platform=None, authentication=None, verbose=True)
