@@ -1,38 +1,76 @@
-     Jsc   Voc     FF  Efficiency    Sr      Sp  Temp  Class
-0  10.71  0.19  33.44        0.66  9.70   19.37   450      3
-1  11.40  0.25  38.53        1.09  8.92   45.23   450      3
-2  11.51  0.28  44.53        1.41  7.35  106.44   450      3
-3  10.62  0.25  39.18        1.04  9.41   57.29   450      3
-4  10.85  0.28  42.83        1.29  8.81   91.59   450      3
-               Description                 Value
-0               Session id                  3456
-1      Original data shape              (182, 8)
-2   Transformed data shape              (182, 8)
-3         Numeric features                     8
-4               Preprocess                  True
-5          Imputation type                simple
-6       Numeric imputation                  mean
-7   Categorical imputation                  mode
-8                Normalize                  True
-9         Normalize method                zscore
-10                CPU Jobs                    -1
-11                 Use GPU                 False
-12          Log Experiment                 False
-13         Experiment Name  cluster-default-name
-14                     USI                  a439
-   Silhouette  Calinski-Harabasz  Davies-Bouldin  Homogeneity  Rand Index  Completeness                                                                              
-0      0.3672            98.7672           0.914            0           0             0
-KMeans(n_clusters=4, random_state=3456)
-interactive(children=(ToggleButtons(description='Plot Type:', icons=('',), options=(('Pipeline Plot', 'pipeline'), ('t-SNE (3d) Dimension Plot', 'cluster'), ('Cluster t-SNE (3d)', 'tsne'), ('Elbow Plot', 'elbow'), ('Silhouette Plot', 'silhouette'), ('Distance Plot', 'distance'), ('Distribution Plot', 'distribution')), value='pipeline'), Output()), _dom_classes=('widget-interact',))
+                    Description             Value
+0                    Session id               123
+1                        Target        Efficiency
+2                   Target type        Regression
+3           Original data shape          (204, 8)
+4        Transformed data shape          (204, 8)
+5   Transformed train set shape          (142, 8)
+6    Transformed test set shape           (62, 8)
+7              Numeric features                 7
+8                    Preprocess              True
+9               Imputation type            simple
+10           Numeric imputation              mean
+11       Categorical imputation              mode
+12               Fold Generator             KFold
+13                  Fold Number                10
+14                     CPU Jobs                -1
+15                      Use GPU             False
+16               Log Experiment             False
+17              Experiment Name  reg-default-name
+18                          USI              cab4
+                                    Model      MAE         MSE     RMSE  \                                   
+et                  Extra Trees Regressor   0.0861      0.0336   0.1470   
+gbr           Gradient Boosting Regressor   0.1349      0.0591   0.2177   
+rf                Random Forest Regressor   0.1483      0.0649   0.2375   
+lightgbm  Light Gradient Boosting Machine   0.1827      0.0815   0.2692   
+ada                    AdaBoost Regressor   0.2273      0.0952   0.3006   
+dt                Decision Tree Regressor   0.2374      0.2213   0.4225   
+knn                 K Neighbors Regressor   0.4218      0.4209   0.6210   
+dummy                     Dummy Regressor   1.8208      4.2687   2.0541   
+lr                      Linear Regression   1.0890     61.1049   2.9345   
+lar                Least Angle Regression   1.0864     61.1074   2.9349   
+ridge                    Ridge Regression   1.0895     61.1918   2.9362   
+br                         Bayesian Ridge   1.1007     63.0441   2.9743   
+en                            Elastic Net   1.3263     99.5982   3.6795   
+lasso                    Lasso Regression   1.5052    126.3032   4.1634   
+llar         Lasso Least Angle Regression   1.5052    126.3033   4.1634   
+huber                     Huber Regressor   1.9169    163.5359   5.0435   
+omp           Orthogonal Matching Pursuit   4.4910   1035.2762  11.9504   
+par          Passive Aggressive Regressor  18.2849  31086.4056  60.8408   
+
+                 R2   RMSLE     MAPE  TT (Sec)  
+et           0.9911  0.0449   0.1312     0.037  
+gbr          0.9843  0.0625   0.1316     0.023  
+rf           0.9826  0.0749   0.1822     0.048  
+lightgbm     0.9779  0.0896   0.2927    13.939  
+ada          0.9753  0.1085   1.3055     0.023  
+dt           0.9422  0.1142   0.1499     0.008  
+knn          0.8844  0.2207   0.8473     0.010  
+dummy       -0.1077  0.6523  10.7523     0.007  
+lr          -9.1151  0.2445   1.3780     0.243  
+lar         -9.1159  0.2441   1.2406     0.008  
+ridge       -9.1295  0.2444   1.3800     0.007  
+br          -9.4352  0.2442   1.4276     0.008  
+en         -15.4747  0.2651   2.7918     0.008  
+lasso      -19.8947  0.3004   3.7174     0.009  
+llar       -19.8947  0.3004   3.7174     0.008  
+huber      -26.1559  0.4305   9.9652     0.012  
+omp       -170.2600  0.6959  10.5679     0.008  
+par      -5134.4681  0.6497   4.6441     0.008  
+interactive(children=(ToggleButtons(description='Plot Type:', icons=('',), options=(('Pipeline Plot', 'pipeline'), ('Hyperparameters', 'parameter'), ('Residuals', 'residuals'), ('Prediction Error', 'error'), ('Cooks Distance', 'cooks'), ('Feature Selection', 'rfe'), ('Learning Curve', 'learning'), ('Manifold Learning', 'manifold'), ('Validation Curve', 'vc'), ('Feature Importance', 'feature'), ('Feature Importance (All)', 'feature_all'), ('Decision Tree', 'tree'), ('Interactive Residuals', 'residuals_interactive')), value='pipeline'), Output()), _dom_classes=('widget-interact',))
+                   Model     MAE     MSE    RMSE      R2   RMSLE    MAPE
+0  Extra Trees Regressor  0.0953  0.0319  0.1785  0.9917  0.0645  0.0797
+                   Model     MAE     MSE    RMSE      R2   RMSLE    MAPE
+0  Extra Trees Regressor  0.0289  0.0097  0.0984  0.9976  0.0356  0.0241
 Transformation Pipeline and Model Successfully Saved
 Transformation Pipeline and Model Successfully Loaded
 Pipeline(memory=FastMemory(location=/tmp/joblib),
          steps=[('numerical_imputer',
-                 TransformerWrapper(include=['Jsc', 'Voc', 'FF', 'Efficiency',
-                                             'Sr', 'Sp', 'Temp', 'Class'],
+                 TransformerWrapper(include=['Jsc', 'Voc', 'FF', 'Sr', 'Sp',
+                                             'Temp', 'Class'],
                                     transformer=SimpleImputer())),
                 ('categorical_imputer',
                  TransformerWrapper(include=[],
                                     transformer=SimpleImputer(strategy='most_frequent'))),
-                ('normalize', TransformerWrapper(transformer=StandardScaler())),
-                ('trained_model', KMeans(n_clusters=4, random_state=3456))])
+                ('trained_model',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))])
