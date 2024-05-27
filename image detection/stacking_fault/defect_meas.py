@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("stacking_fault/defect_formation_times.csv")
+df = pd.read_csv("stacking_fault/rate_defect_formation_times.csv")
 
 df["Defect_Formation_Time_Minutes"] = df["Defect_Formation_Time_Seconds"] / 60
 
