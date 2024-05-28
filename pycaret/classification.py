@@ -5,32 +5,33 @@ data = get_data('data2')
 from pycaret.classification import *
 s = setup(data, target='Class', session_id=123)
 
-
-best = compare_models()  # SVM, Decision Tree ve Random Forest modellerini dışlar
-
-
-
+# Model Karşılaştırma
+best = compare_models()
 print(best)
 
+# Modeli Değerlendirme
 evaluate_model(best)
-plot_model(best, plot = 'auc')
+plot_model(best, plot='auc')
+plot_model(best, plot='confusion_matrix')
+plot_model(best, plot='class_report')
+plot_model(best, plot='feature')
+plot_model(best, plot='pr')
 
-plot_model(best, plot = 'confusion_matrix')
+# Hiperparametre Ayarı
+tuned_model = tune_model(best)
+print(tuned_model)
 
-plot_model(best, plot = 'class_report')
+# Tahmin Yapma
+predictions = predict_model(tuned_model, data=data)
+print(predictions.head())
 
+predictions_raw = predict_model(tuned_model, data=data, raw_score=True)
+print(predictions_raw.head())
 
-predict_model(best)
-
-
-predictions = predict_model(best, data=data)
-predictions.head()
-
-predictions = predict_model(best, data=data, raw_score=True)
-predictions.head()
-
-save_model(best, 'my_best_pipeline')
-
+# Modeli Kaydetme ve Yükleme
+save_model(tuned_model, 'my_best_pipeline')
 loaded_model = load_model('my_best_pipeline')
 print(loaded_model)
 
+# Yüklenen Modeli Değerlendirme
+evaluate_model(loaded_model)

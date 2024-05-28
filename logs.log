@@ -93,3 +93,572 @@
 2024-05-03 00:15:31,172:INFO:             prophet: Not installed
 2024-05-03 00:15:31,172:INFO:None
 2024-05-03 00:15:31,172:INFO:Set up data.
+2024-05-28 23:05:54,139:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-28 23:05:54,139:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-28 23:05:54,139:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-28 23:05:54,139:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:05:58,184:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:05:58,184:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:05:58,184:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:05:58,184:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:06:00,555:INFO:Initializing load_model()
+2024-05-29 01:06:00,562:INFO:load_model(model_name=my_best_pipeline, platform=None, authentication=None, verbose=True)
+2024-05-29 01:07:29,298:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:07:29,298:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:07:29,298:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:07:29,298:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:07:41,035:INFO:Initializing load_model()
+2024-05-29 01:07:41,036:INFO:load_model(model_name=pycaret/my_best_pipeline, platform=None, authentication=None, verbose=True)
+2024-05-29 01:07:47,272:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:07:47,272:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:07:47,272:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:07:47,272:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:07:55,806:INFO:Initializing load_model()
+2024-05-29 01:07:55,806:INFO:load_model(model_name=pycaret/my_best_pipeline, platform=None, authentication=None, verbose=True)
+2024-05-29 01:08:52,956:INFO:Initializing predict_model()
+2024-05-29 01:08:52,956:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002181E22A830>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Jsc', 'Voc', 'FF', 'Efficiency',
+                                             'Sr', 'Sp', 'Temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002181E247010>)
+2024-05-29 01:08:52,956:INFO:Checking exceptions
+2024-05-29 01:08:52,956:INFO:Preloading libraries
+2024-05-29 01:08:52,973:INFO:Set up data.
+2024-05-29 01:08:52,980:INFO:Set up index.
+2024-05-29 01:11:15,993:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:11:15,993:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:11:15,993:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:11:15,993:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:11:32,200:INFO:Initializing load_model()
+2024-05-29 01:11:32,200:INFO:load_model(model_name=pycaret/my_best_pipeline, platform=None, authentication=None, verbose=True)
+2024-05-29 01:11:44,384:INFO:Initializing predict_model()
+2024-05-29 01:11:44,384:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000258671AF220>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Jsc', 'Voc', 'FF', 'Efficiency',
+                                             'Sr', 'Sp', 'Temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000258671CEDD0>)
+2024-05-29 01:11:44,384:INFO:Checking exceptions
+2024-05-29 01:11:44,384:INFO:Preloading libraries
+2024-05-29 01:11:44,385:INFO:Set up data.
+2024-05-29 01:11:44,394:INFO:Set up index.
+2024-05-29 01:12:14,616:INFO:Initializing predict_model()
+2024-05-29 01:12:14,617:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000025865B45AE0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Jsc', 'Voc', 'FF', 'Efficiency',
+                                             'Sr', 'Sp', 'Temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000025865B8E320>)
+2024-05-29 01:12:14,617:INFO:Checking exceptions
+2024-05-29 01:12:14,617:INFO:Preloading libraries
+2024-05-29 01:12:14,617:INFO:Set up data.
+2024-05-29 01:12:14,622:INFO:Set up index.
+2024-05-29 01:13:08,532:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:13:08,532:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:13:08,532:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:13:08,532:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:13:10,948:INFO:Initializing load_model()
+2024-05-29 01:13:10,948:INFO:load_model(model_name=pycaret/my_best_pipeline, platform=None, authentication=None, verbose=True)
+2024-05-29 01:13:32,480:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:13:32,480:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:13:32,481:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:13:32,481:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:13:35,878:INFO:Initializing load_model()
+2024-05-29 01:13:35,878:INFO:load_model(model_name=pycaret/my_best_pipeline, platform=None, authentication=None, verbose=True)
+2024-05-29 01:14:05,029:INFO:Initializing predict_model()
+2024-05-29 01:14:05,029:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001972860BCA0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Jsc', 'Voc', 'FF', 'Efficiency',
+                                             'Sr', 'Sp', 'Temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000197271FB5B0>)
+2024-05-29 01:14:05,044:INFO:Checking exceptions
+2024-05-29 01:14:05,044:INFO:Preloading libraries
+2024-05-29 01:14:05,045:INFO:Set up data.
+2024-05-29 01:14:05,053:INFO:Set up index.
+2024-05-29 01:17:24,097:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:17:24,097:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:17:24,097:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:17:24,098:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:17:26,501:INFO:Initializing load_model()
+2024-05-29 01:17:26,501:INFO:load_model(model_name=pycaret/my_best_pipeline, platform=None, authentication=None, verbose=True)
+2024-05-29 01:17:32,300:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:17:32,301:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:17:32,301:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:17:32,301:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:17:34,631:INFO:Initializing load_model()
+2024-05-29 01:17:34,631:INFO:load_model(model_name=pycaret/my_best_pipeline, platform=None, authentication=None, verbose=True)
+2024-05-29 01:18:17,905:INFO:Initializing predict_model()
+2024-05-29 01:18:17,905:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000025FD81D70D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Jsc', 'Voc', 'FF', 'Efficiency',
+                                             'Sr', 'Sp', 'Temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000025FD6DC7490>)
+2024-05-29 01:18:17,905:INFO:Checking exceptions
+2024-05-29 01:18:17,905:INFO:Preloading libraries
+2024-05-29 01:18:17,905:INFO:Set up data.
+2024-05-29 01:18:17,926:INFO:Set up index.
+2024-05-29 01:19:14,625:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:19:14,625:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:19:14,625:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:19:14,625:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:19:16,936:INFO:Initializing load_model()
+2024-05-29 01:19:16,936:INFO:load_model(model_name=pycaret/my_best_pipeline, platform=None, authentication=None, verbose=True)
+2024-05-29 01:19:49,684:INFO:Initializing predict_model()
+2024-05-29 01:19:49,684:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000024AA37CD210>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Jsc', 'Voc', 'FF', 'Efficiency',
+                                             'Sr', 'Sp', 'Temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000024AA379A950>)
+2024-05-29 01:19:49,684:INFO:Checking exceptions
+2024-05-29 01:19:49,684:INFO:Preloading libraries
+2024-05-29 01:19:49,684:INFO:Set up data.
+2024-05-29 01:19:49,700:INFO:Set up index.
+2024-05-29 01:20:03,053:WARNING:c:\Users\seyzu\project\study-repo\pycaret\app.py:79: FutureWarning: Calling int on a single element Series is deprecated and will raise a TypeError in the future. Use int(ser.iloc[0]) instead
+  predicted_class = int(predictions['prediction_label'])
+
+2024-05-29 01:20:22,626:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:20:22,626:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:20:22,626:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:20:22,626:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:20:25,335:INFO:Initializing load_model()
+2024-05-29 01:20:25,335:INFO:load_model(model_name=pycaret/my_best_pipeline, platform=None, authentication=None, verbose=True)
+2024-05-29 01:20:34,606:INFO:Initializing predict_model()
+2024-05-29 01:20:34,606:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000020AE52405E0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Jsc', 'Voc', 'FF', 'Efficiency',
+                                             'Sr', 'Sp', 'Temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000020AE3D97640>)
+2024-05-29 01:20:34,606:INFO:Checking exceptions
+2024-05-29 01:20:34,606:INFO:Preloading libraries
+2024-05-29 01:20:34,609:INFO:Set up data.
+2024-05-29 01:20:34,616:INFO:Set up index.
+2024-05-29 01:20:51,704:WARNING:c:\Users\seyzu\project\study-repo\pycaret\app.py:79: FutureWarning: Calling int on a single element Series is deprecated and will raise a TypeError in the future. Use int(ser.iloc[0]) instead
+  predicted_class = int(predictions['prediction_label'])
+
+2024-05-29 01:21:14,675:INFO:Initializing predict_model()
+2024-05-29 01:21:14,675:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000020AE52E56F0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Jsc', 'Voc', 'FF', 'Efficiency',
+                                             'Sr', 'Sp', 'Temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000020AE53ADC60>)
+2024-05-29 01:21:14,675:INFO:Checking exceptions
+2024-05-29 01:21:14,675:INFO:Preloading libraries
+2024-05-29 01:21:14,676:INFO:Set up data.
+2024-05-29 01:21:14,680:INFO:Set up index.
+2024-05-29 01:21:19,736:WARNING:c:\Users\seyzu\project\study-repo\pycaret\app.py:79: FutureWarning: Calling int on a single element Series is deprecated and will raise a TypeError in the future. Use int(ser.iloc[0]) instead
+  predicted_class = int(predictions['prediction_label'])
+
+2024-05-29 01:23:18,661:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:23:18,661:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:23:18,661:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:23:18,661:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:23:21,041:INFO:Initializing load_model()
+2024-05-29 01:23:21,041:INFO:load_model(model_name=pycaret/my_best_pipeline, platform=None, authentication=None, verbose=True)
+2024-05-29 01:23:25,263:INFO:Initializing predict_model()
+2024-05-29 01:23:25,264:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000261C6317E20>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Jsc', 'Voc', 'FF', 'Efficiency',
+                                             'Sr', 'Sp', 'Temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000261C6360790>)
+2024-05-29 01:23:25,264:INFO:Checking exceptions
+2024-05-29 01:23:25,264:INFO:Preloading libraries
+2024-05-29 01:23:25,264:INFO:Set up data.
+2024-05-29 01:23:25,270:INFO:Set up index.
+2024-05-29 01:27:24,062:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:27:24,062:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:27:24,062:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:27:24,062:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:27:26,976:INFO:Initializing load_model()
+2024-05-29 01:27:26,976:INFO:load_model(model_name=pycaret/my_best_pipeline, platform=None, authentication=None, verbose=True)
+2024-05-29 01:29:44,380:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:29:44,380:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:29:44,380:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:29:44,380:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:29:46,685:INFO:Initializing load_model()
+2024-05-29 01:29:46,685:INFO:load_model(model_name=pycaret/my_best_pipeline, platform=None, authentication=None, verbose=True)
+2024-05-29 01:50:49,867:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:50:49,867:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:50:49,867:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:50:49,867:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:50:52,796:INFO:Initializing load_model()
+2024-05-29 01:50:52,796:INFO:load_model(model_name=pycaret/my_best_pipeline, platform=None, authentication=None, verbose=True)
+2024-05-29 01:51:12,200:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:51:12,200:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:51:12,200:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:51:12,200:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:51:14,385:INFO:Initializing load_model()
+2024-05-29 01:51:14,387:INFO:load_model(model_name=pycaret/my_best_pipeline, platform=None, authentication=None, verbose=True)
+2024-05-29 01:51:20,383:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:51:20,383:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:51:20,383:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:51:20,383:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:51:22,937:INFO:Initializing load_model()
+2024-05-29 01:51:22,937:INFO:load_model(model_name=pycaret/my_best_pipeline, platform=None, authentication=None, verbose=True)
+2024-05-29 01:51:49,217:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:51:49,217:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:51:49,217:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:51:49,217:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:51:51,524:INFO:Initializing load_model()
+2024-05-29 01:51:51,524:INFO:load_model(model_name=pycaret/my_best_pipeline, platform=None, authentication=None, verbose=True)
+2024-05-29 01:56:17,425:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:56:17,425:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:56:17,425:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:56:17,425:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:56:19,990:INFO:Initializing load_model()
+2024-05-29 01:56:19,990:INFO:load_model(model_name=pycaret/my_best_pipeline, platform=None, authentication=None, verbose=True)
+2024-05-29 01:56:37,892:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:56:37,892:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:56:37,892:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:56:37,892:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:56:41,110:INFO:Initializing load_model()
+2024-05-29 01:56:41,110:INFO:load_model(model_name=pycaret/my_best_pipeline, platform=None, authentication=None, verbose=True)
+2024-05-29 01:56:49,617:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:56:49,617:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:56:49,617:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:56:49,617:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:56:52,640:INFO:Initializing load_model()
+2024-05-29 01:56:52,641:INFO:load_model(model_name=pycaret/my_best_pipeline, platform=None, authentication=None, verbose=True)
+2024-05-29 01:57:58,919:INFO:Initializing predict_model()
+2024-05-29 01:57:58,919:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001CFCACAE110>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Jsc', 'Voc', 'FF', 'Efficiency',
+                                             'Sr', 'Sp', 'Temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001CFCAC7FEB0>)
+2024-05-29 01:57:58,919:INFO:Checking exceptions
+2024-05-29 01:57:58,919:INFO:Preloading libraries
+2024-05-29 01:57:58,919:INFO:Set up data.
+2024-05-29 01:57:58,935:INFO:Set up index.
+2024-05-29 01:59:08,594:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:59:08,594:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:59:08,594:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:59:08,594:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:59:11,217:INFO:Initializing load_model()
+2024-05-29 01:59:11,217:INFO:load_model(model_name=pycaret/my_best_pipeline, platform=None, authentication=None, verbose=True)
+2024-05-29 01:59:23,360:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:59:23,360:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:59:23,360:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:59:23,360:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 01:59:26,151:INFO:Initializing load_model()
+2024-05-29 01:59:26,151:INFO:load_model(model_name=pycaret/my_best_pipeline, platform=None, authentication=None, verbose=True)
+2024-05-29 02:00:34,223:INFO:Initializing predict_model()
+2024-05-29 02:00:34,223:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D4176F7E50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Jsc', 'Voc', 'FF', 'Efficiency',
+                                             'Sr', 'Sp', 'Temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001D4177408B0>)
+2024-05-29 02:00:34,228:INFO:Checking exceptions
+2024-05-29 02:00:34,228:INFO:Preloading libraries
+2024-05-29 02:00:34,228:INFO:Set up data.
+2024-05-29 02:00:34,237:INFO:Set up index.
+2024-05-29 02:01:29,615:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 02:01:29,615:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 02:01:29,615:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 02:01:29,615:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 02:01:31,888:INFO:Initializing load_model()
+2024-05-29 02:01:31,888:INFO:load_model(model_name=pycaret/my_best_pipeline, platform=None, authentication=None, verbose=True)
+2024-05-29 02:01:35,396:INFO:Initializing predict_model()
+2024-05-29 02:01:35,397:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000019E32417DC0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Jsc', 'Voc', 'FF', 'Efficiency',
+                                             'Sr', 'Sp', 'Temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000019E3245CC10>)
+2024-05-29 02:01:35,397:INFO:Checking exceptions
+2024-05-29 02:01:35,397:INFO:Preloading libraries
+2024-05-29 02:01:35,398:INFO:Set up data.
+2024-05-29 02:01:35,398:INFO:Set up index.
+2024-05-29 02:02:08,712:INFO:Initializing predict_model()
+2024-05-29 02:02:08,712:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000019E32548FA0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Jsc', 'Voc', 'FF', 'Efficiency',
+                                             'Sr', 'Sp', 'Temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000019E3252EB90>)
+2024-05-29 02:02:08,712:INFO:Checking exceptions
+2024-05-29 02:02:08,712:INFO:Preloading libraries
+2024-05-29 02:02:08,714:INFO:Set up data.
+2024-05-29 02:02:08,719:INFO:Set up index.
+2024-05-29 02:04:58,538:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 02:04:58,538:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 02:04:58,538:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 02:04:58,538:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 02:05:01,041:INFO:Initializing load_model()
+2024-05-29 02:05:01,041:INFO:load_model(model_name=pycaret/my_best_pipeline, platform=None, authentication=None, verbose=True)
+2024-05-29 02:05:04,632:INFO:Initializing predict_model()
+2024-05-29 02:05:04,632:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D6E4908A90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Jsc', 'Voc', 'FF', 'Efficiency',
+                                             'Sr', 'Sp', 'Temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001D6E48DC310>)
+2024-05-29 02:05:04,632:INFO:Checking exceptions
+2024-05-29 02:05:04,632:INFO:Preloading libraries
+2024-05-29 02:05:04,633:INFO:Set up data.
+2024-05-29 02:05:04,642:INFO:Set up index.
+2024-05-29 02:07:53,544:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 02:07:53,544:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 02:07:53,544:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 02:07:53,544:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 02:07:56,224:INFO:Initializing load_model()
+2024-05-29 02:07:56,224:INFO:load_model(model_name=pycaret/my_best_pipeline, platform=None, authentication=None, verbose=True)
+2024-05-29 02:08:01,133:INFO:Initializing predict_model()
+2024-05-29 02:08:01,133:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000027CEB3707F0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Jsc', 'Voc', 'FF', 'Efficiency',
+                                             'Sr', 'Sp', 'Temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000027CEB33C3A0>)
+2024-05-29 02:08:01,133:INFO:Checking exceptions
+2024-05-29 02:08:01,133:INFO:Preloading libraries
+2024-05-29 02:08:01,134:INFO:Set up data.
+2024-05-29 02:08:01,134:INFO:Set up index.
+2024-05-29 02:08:33,473:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 02:08:33,473:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 02:08:33,473:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 02:08:33,473:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 02:08:36,073:INFO:Initializing load_model()
+2024-05-29 02:08:36,073:INFO:load_model(model_name=pycaret/my_best_pipeline, platform=None, authentication=None, verbose=True)
+2024-05-29 02:08:47,560:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 02:08:47,560:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 02:08:47,560:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 02:08:47,560:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 02:08:49,908:INFO:Initializing load_model()
+2024-05-29 02:08:49,908:INFO:load_model(model_name=pycaret/my_best_pipeline, platform=None, authentication=None, verbose=True)
+2024-05-29 02:08:57,837:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 02:08:57,837:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 02:08:57,837:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 02:08:57,837:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-29 02:09:00,931:INFO:Initializing load_model()
+2024-05-29 02:09:00,932:INFO:load_model(model_name=pycaret/my_best_pipeline, platform=None, authentication=None, verbose=True)
+2024-05-29 02:09:02,741:INFO:Initializing predict_model()
+2024-05-29 02:09:02,741:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000024DA2C73DC0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Jsc', 'Voc', 'FF', 'Efficiency',
+                                             'Sr', 'Sp', 'Temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 ExtraTreesClassifier(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000024DA2CB8700>)
+2024-05-29 02:09:02,741:INFO:Checking exceptions
+2024-05-29 02:09:02,741:INFO:Preloading libraries
+2024-05-29 02:09:02,742:INFO:Set up data.
+2024-05-29 02:09:02,751:INFO:Set up index.
