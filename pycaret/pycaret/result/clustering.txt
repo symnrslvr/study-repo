@@ -1,0 +1,32 @@
+               Description                 Value
+0               Session id                   877
+1      Original data shape              (204, 8)
+2   Transformed data shape              (204, 8)
+3         Numeric features                     8
+4               Preprocess                  True
+5          Imputation type                simple
+6       Numeric imputation                  mean
+7   Categorical imputation                  mode
+8                Normalize                  True
+9         Normalize method                zscore
+10                CPU Jobs                    -1
+11                 Use GPU                 False
+12          Log Experiment                 False
+13         Experiment Name  cluster-default-name
+14                     USI                  68f5
+   Silhouette  Calinski-Harabasz  Davies-Bouldin  Homogeneity  Rand Index  Completeness                      
+0      0.4156             97.192          0.5719            0           0             0
+KMeans(n_clusters=4, random_state=877)
+interactive(children=(ToggleButtons(description='Plot Type:', icons=('',), options=(('Pipeline Plot', 'pipeline'), ('t-SNE (3d) Dimension Plot', 'cluster'), ('Cluster t-SNE (3d)', 'tsne'), ('Elbow Plot', 'elbow'), ('Silhouette Plot', 'silhouette'), ('Distance Plot', 'distance'), ('Distribution Plot', 'distribution')), value='pipeline'), Output()), _dom_classes=('widget-interact',))
+Transformation Pipeline and Model Successfully Saved
+Transformation Pipeline and Model Successfully Loaded
+Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Jsc', 'Voc', 'FF', 'Efficiency',
+                                             'Sr', 'Sp', 'Temp', 'Class'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model', KMeans(n_clusters=4, random_state=877))])
