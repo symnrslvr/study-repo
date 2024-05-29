@@ -1,5 +1,5 @@
 from pycaret.datasets import get_data
-data = get_data('data')
+data = get_data('train_set')
 
 from pycaret.classification import *
 s = setup(data, target='Class', session_id=123)
@@ -23,8 +23,8 @@ print(predictions.head())
 predictions_raw = predict_model(tuned_model, data=data, raw_score=True)
 print(predictions_raw.head())
 
-save_model(tuned_model, 'my_best_pipeline_new')
-loaded_model = load_model('my_best_pipeline_new')
+save_model(tuned_model, 'my_best_pipeline_train')
+loaded_model = load_model('my_best_pipeline_train')
 print(loaded_model)
 
 evaluate_model(loaded_model)

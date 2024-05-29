@@ -4,7 +4,7 @@ from pycaret.classification import predict_model, load_model
 
 app = Flask(__name__)
 
-model = load_model('pycaret/my_best_pipeline_new')
+model = load_model('pycaret/my_best_pipeline_train')
 
 @app.route('/')
 def index():
