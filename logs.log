@@ -995,3 +995,13 @@
 'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
 2024-05-30 00:54:10,534:INFO:Initializing load_model()
 2024-05-30 00:54:10,535:INFO:load_model(model_name=pycaret/my_best_pipeline_train, platform=None, authentication=None, verbose=True)
+2024-05-30 00:54:49,580:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 00:54:49,580:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 00:54:49,580:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 00:54:49,580:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 00:54:51,800:INFO:Initializing load_model()
+2024-05-30 00:54:51,800:INFO:load_model(model_name=pycaret/my_best_pipeline_train, platform=None, authentication=None, verbose=True)
