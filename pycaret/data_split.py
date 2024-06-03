@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 
 # CSV dosyasını okuyalım
-df = pd.read_csv('pycaret/data_combined.csv')
+df = pd.read_csv('future_new.csv')
 
 # Sütun adlarını kontrol edelim
 print("Veri çerçevesinin sütun adları:")
@@ -22,7 +22,7 @@ train_set = pd.concat([X_train, y_train], axis=1)
 test_set = pd.concat([X_test, y_test], axis=1)
 
 # Eğitim ve test setlerini CSV dosyaları olarak kaydedelim
-train_set.to_csv('train_set_combine.csv', index=False)
-test_set.to_csv('test_set_combine.csv', index=False)
+train_set.to_csv('train_set_future_new.csv', index=False)
+test_set.to_csv('test_set_future_new.csv', index=False)
 
 print("Eğitim ve test setleri başarıyla kaydedildi.")

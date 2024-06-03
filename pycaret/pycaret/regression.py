@@ -1,5 +1,5 @@
 from pycaret.datasets import get_data
-data = get_data('data2')
+data = get_data('train_set_combine3')
 
 from pycaret.regression import *
 s = setup(data, target = 'Efficiency', session_id = 123)

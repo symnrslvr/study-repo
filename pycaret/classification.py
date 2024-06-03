@@ -1,33 +1,33 @@
-from pycaret.datasets import get_data
-data = get_data('train_set_combine')
+# from pycaret.datasets import get_data
+# data = get_data('train_set_future_new')
 
-from pycaret.classification import *
-s = setup(data, target='Class', session_id=123)
+# from pycaret.classification import *
+# s = setup(data, target='Class', session_id=123)
 
-best = compare_models()
-print(best)
+# best = compare_models()
+# print(best)
 
-evaluate_model(best)
-plot_model(best, plot='auc')
-plot_model(best, plot='confusion_matrix')
-plot_model(best, plot='class_report')
-plot_model(best, plot='feature')
-plot_model(best, plot='pr')
+# evaluate_model(best)
+# plot_model(best, plot='auc')
+# plot_model(best, plot='confusion_matrix')
+# plot_model(best, plot='class_report')
+# plot_model(best, plot='feature')
+# plot_model(best, plot='pr')
 
-tuned_model = tune_model(best)
-print(tuned_model)
+# tuned_model = tune_model(best)
+# print(tuned_model)
 
-predictions = predict_model(tuned_model, data=data)
-print(predictions.head())
+# predictions = predict_model(tuned_model, data=data)
+# print(predictions.head())
 
-predictions_raw = predict_model(tuned_model, data=data, raw_score=True)
-print(predictions_raw.head())
+# predictions_raw = predict_model(tuned_model, data=data, raw_score=True)
+# print(predictions_raw.head())
 
-save_model(tuned_model, 'my_best_pipeline_train_combine')
-loaded_model = load_model('my_best_pipeline_train_combine')
-print(loaded_model)
+# save_model(tuned_model, 'my_best_pipeline_future_new')
+# loaded_model = load_model('my_best_pipeline_future_new')
+# print(loaded_model)
 
-evaluate_model(loaded_model)
+# evaluate_model(loaded_model)
 
 
 # from pycaret.datasets import get_data
@@ -80,3 +80,57 @@ evaluate_model(loaded_model)
 
 # # Modeli değerlendirin
 # evaluate_model(loaded_model_new)
+
+
+from pycaret.datasets import get_data
+from pycaret.classification import *
+
+# Veri setini yükle
+data = get_data('future_new')
+
+# Otomatik ML setup'ını yap
+s = setup(data, target='Class', session_id=123, fix_imbalance=True, imputation_type='iterative')
+
+# En iyi modeli seç
+best = compare_models()
+print(best)
+
+# Modeli değerlendir
+evaluate_model(best)
+
+# ROC eğrisini çiz
+plot_model(best, plot='auc')
+
+# Karmaşıklık matrisini çiz
+plot_model(best, plot='confusion_matrix')
+
+# Sınıflandırma raporunu çiz
+plot_model(best, plot='class_report')
+
+# Özellik önemini gösteren grafiği çiz
+plot_model(best, plot='feature')
+
+# Precision-recall eğrisini çiz
+plot_model(best, plot='pr')
+
+# Modeli iyileştir
+tuned_model = tune_model(best)
+print(tuned_model)
+
+# Modelin tahminlerini ekrana yazdır
+predictions = predict_model(tuned_model, data=data)
+print(predictions.head())
+
+# Ham skorları kullanarak modelin tahminlerini ekrana yazdır
+predictions_raw = predict_model(tuned_model, data=data, raw_score=True)
+print(predictions_raw.head())
+
+# Modeli kaydet
+save_model(tuned_model, 'my_best_pipeline_future_n')
+
+# Modeli yükle
+loaded_model = load_model('my_best_pipeline_future_n')
+print(loaded_model)
+
+# Modeli değerlendir
+evaluate_model(loaded_model)

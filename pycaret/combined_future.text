@@ -1,0 +1,111 @@
+                                    Model  Accuracy     AUC  Recall   Prec.  \
+et                 Extra Trees Classifier    0.8937  0.9859  0.8937  0.9075
+lightgbm  Light Gradient Boosting Machine    0.8632  0.9709  0.8632  0.8832
+catboost              CatBoost Classifier    0.8632  0.9819  0.8632  0.8696
+rf               Random Forest Classifier    0.8482  0.9670  0.8482  0.8589
+gbc          Gradient Boosting Classifier    0.8329  0.0000  0.8329  0.8460
+xgboost         Extreme Gradient Boosting    0.8276  0.9668  0.8276  0.8390
+dt               Decision Tree Classifier    0.7568  0.8523  0.7568  0.7556
+qda       Quadratic Discriminant Analysis    0.6355  0.0000  0.6355  0.7261
+knn                K Neighbors Classifier    0.6253  0.8412  0.6253  0.6441
+lr                    Logistic Regression    0.5903  0.0000  0.5903  0.6643
+ridge                    Ridge Classifier    0.5600  0.0000  0.5600  0.6143
+lda          Linear Discriminant Analysis    0.5550  0.0000  0.5550  0.6395
+nb                            Naive Bayes    0.5192  0.8696  0.5192  0.6809
+ada                  Ada Boost Classifier    0.4534  0.0000  0.4534  0.3679
+svm                   SVM - Linear Kernel    0.3639  0.0000  0.3639  0.3330
+dummy                    Dummy Classifier    0.2982  0.5000  0.2982  0.0892
+
+              F1   Kappa     MCC  TT (Sec)
+et        0.8895  0.8642  0.8687     0.065
+lightgbm  0.8597  0.8268  0.8326     1.007
+catboost  0.8546  0.8257  0.8324     4.144
+rf        0.8405  0.8064  0.8136     0.084
+gbc       0.8257  0.7878  0.7951     0.212
+xgboost   0.8219  0.7807  0.7860     0.056
+dt        0.7423  0.6914  0.7013     0.017
+qda       0.6352  0.5407  0.5716     0.019
+knn       0.6129  0.5264  0.5391     0.742
+lr        0.5840  0.4853  0.5019     0.992
+ridge     0.5514  0.4490  0.4634     0.018
+lda       0.5508  0.4446  0.4606     0.017
+nb        0.5161  0.4069  0.4409     0.024
+ada       0.3817  0.3112  0.3453     0.035
+svm       0.2944  0.1509  0.1663     0.024
+dummy     0.1372  0.0000  0.0000     0.019
+ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                     oob_score=False, random_state=123, verbose=0,
+                     warm_start=False)
+interactive(children=(ToggleButtons(description='Plot Type:', icons=('',), options=(('Pipeline Plot', 'pipeline'), ('Hyperparameters', 'parameter'), ('AUC', 'auc'), ('Confusion Matrix', 'confusion_matrix'), ('Threshold', 'threshold'), ('Precision Recall', 'pr'), ('Prediction Error', 'error'), ('Class Report', 'class_report'), ('Feature Selection', 'rfe'), ('Learning Curve', 'learning'), ('Manifold Learning', 'manifold'), ('Calibration Curve', 'calibration'), ('Validation Curve', 'vc'), ('Dimensions', 'dimension'), ('Feature Importance', 'feature'), ('Feature Importance (All)', 'feature_all'), ('Decision Boundary', 'boundary'), ('Lift Chart', 'lift'), ('Gain Chart', 'gain'), ('Decision Tree', 'tree'), ('KS Statistic Plot', 'ks')), value='pipeline'), Output()), _dom_classes=('widget-interact',))
+Processing:   0%|                                                                                                       | 0/7 [00:00<?, ?it/s]Fitting 10 folds for each of 10 candidates, totalling 100 fits
+Original model was better than the tuned model, hence it will be returned. NOTE: The display metrics are for the tuned model (not the original one).
+      Accuracy     AUC  Recall   Prec.      F1   Kappa     MCC
+Fold
+0       0.7500  0.9569  0.7500  0.6775  0.6968  0.6825  0.7051
+1       0.9500  0.9971  0.9500  0.9625  0.9486  0.9359  0.9389
+2       0.8000  0.9419  0.8000  0.8875  0.8008  0.7523  0.7764
+3       0.9000  0.9642  0.9000  0.9333  0.8850  0.8734  0.8848
+4       0.9000  0.9763  0.9000  0.9250  0.8952  0.8693  0.8783
+5       1.0000  1.0000  1.0000  1.0000  1.0000  1.0000  1.0000
+6       0.7500  0.9306  0.7500  0.7100  0.7278  0.6774  0.6796
+7       0.8500  0.9754  0.8500  0.9000  0.8514  0.8113  0.8243
+8       0.7368  0.9373  0.7368  0.8289  0.7368  0.6747  0.6986
+9       0.7895  0.9631  0.7895  0.8579  0.7981  0.7361  0.7491
+Mean    0.8426  0.9643  0.8426  0.8683  0.8341  0.8013  0.8135
+Std     0.0871  0.0225  0.0871  0.0991  0.0945  0.1094  0.1041
+ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                     oob_score=False, random_state=123, verbose=0,
+                     warm_start=False)
+                    Model  Accuracy     AUC  Recall   Prec.      F1   Kappa     MCC
+0  Extra Trees Classifier    0.9472  0.9987  0.9472  0.9516  0.9476  0.9329  0.9337
+     Jsc         Voc         FF  Efficiency    Sr          Sp  ...  Temp  Voc_Jsc_Ratio  Rp_Ps_Ratio  Class  prediction_label  prediction_score
+0  10.71  185.669998  33.439999        0.66  9.70   19.370001  ...   450      17.340000       1.7264      3                 3              1.00
+1  11.40  248.529999  38.529999        1.09  8.92   45.230000  ...   450      21.799999       0.8519      3                 3              0.96
+2  11.51  275.059998  44.529999        1.41  7.35  106.440002  ...   450      23.900000       0.4184      3                 3              1.00
+3  10.62  250.270004  39.180000        1.04  9.41   57.290001  ...   450      23.570000       0.6839      3                 3              0.97
+4  10.85  276.899994  42.830002        1.29  8.81   91.589996  ...   450      25.520000       0.4676      3                 3              1.00
+
+[5 rows x 13 columns]
+                    Model  Accuracy     AUC  Recall   Prec.      F1   Kappa     MCC
+0  Extra Trees Classifier    0.9472  0.9987  0.9472  0.9516  0.9476  0.9329  0.9337
+     Jsc         Voc         FF  Efficiency  ...  prediction_score_2  prediction_score_3  prediction_score_4  prediction_score_5
+0  10.71  185.669998  33.439999        0.66  ...                0.00                1.00                 0.0                 0.0
+1  11.40  248.529999  38.529999        1.09  ...                0.02                0.96                 0.0                 0.0
+2  11.51  275.059998  44.529999        1.41  ...                0.00                1.00                 0.0                 0.0
+3  10.62  250.270004  39.180000        1.04  ...                0.03                0.97                 0.0                 0.0
+4  10.85  276.899994  42.830002        1.29  ...                0.00                1.00                 0.0                 0.0
+
+[5 rows x 17 columns]
+Transformation Pipeline and Model Successfully Saved
+Transformation Pipeline and Model Successfully Loaded
+Pipeline(memory=FastMemory(location=C:\Users\seyzu\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('iterative_imputer',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=IterativeImputer(add_indicator=False,
+                                                                 cat_estimator=LGBMClassifier(boosting_type='gbd...
+                 ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0,
+                                      class_weight=None, criterion='gini',
+                                      max_depth=None, max_features='sqrt',
+                                      max_leaf_nodes=None, max_samples=None,
+                                      min_impurity_decrease=0.0,
+                                      min_samples_leaf=1, min_samples_split=2,
+                                      min_weight_fraction_leaf=0.0,
+                                      monotonic_cst=None, n_estimators=100,
+                                      n_jobs=-1, oob_score=False,
+                                      random_state=123, verbose=0,
+                                      warm_start=False))],
+         verbose=False)
+interactive(children=(ToggleButtons(description='Plot Type:', icons=('',), options=(('Pipeline Plot', 'pipeline'), ('Hyperparameters', 'parameter'), ('AUC', 'auc'), ('Confusion Matrix', 'confusion_matrix'), ('Threshold', 'threshold'), ('Precision Recall', 'pr'), ('Prediction Error', 'error'), ('Class Report', 'class_report'), ('Feature Selection', 'rfe'), ('Learning Curve', 'learning'), ('Manifold Learning', 'manifold'), ('Calibration Curve', 'calibration'), ('Validation Curve', 'vc'), ('Dimensions', 'dimension'), ('Feature Importance', 'feature'), ('Feature Importance (All)', 'feature_all'), ('Decision Boundary', 'boundary'), ('Lift Chart', 'lift'), ('Gain Chart', 'gain'), ('Decision Tree', 'tree'), ('KS Statistic Plot', 'ks')), value='pipeline'), Output()), _dom_classes=('widget-interact',))

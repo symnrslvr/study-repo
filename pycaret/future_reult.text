@@ -1,0 +1,97 @@
+                                    Model  Accuracy     AUC  Recall   Prec.  \
+catboost              CatBoost Classifier    0.6713  0.8921  0.6713  0.7303
+xgboost         Extreme Gradient Boosting    0.6666  0.8640  0.6666  0.7015
+rf               Random Forest Classifier    0.6613  0.8763  0.6613  0.7124
+gbc          Gradient Boosting Classifier    0.6613  0.0000  0.6613  0.7044
+lightgbm  Light Gradient Boosting Machine    0.6608  0.8674  0.6608  0.6834
+et                 Extra Trees Classifier    0.6563  0.8735  0.6563  0.7193
+dt               Decision Tree Classifier    0.6058  0.7546  0.6058  0.6564
+ada                  Ada Boost Classifier    0.4303  0.0000  0.4303  0.5254
+knn                K Neighbors Classifier    0.4132  0.7273  0.4132  0.4626
+qda       Quadratic Discriminant Analysis    0.3629  0.0000  0.3629  0.2814
+nb                            Naive Bayes    0.3579  0.6761  0.3579  0.2839
+ridge                    Ridge Classifier    0.3282  0.0000  0.3282  0.1434
+lr                    Logistic Regression    0.3074  0.0000  0.3074  0.2789
+lda          Linear Discriminant Analysis    0.3074  0.0000  0.3074  0.2803
+dummy                    Dummy Classifier    0.2982  0.5000  0.2982  0.0892
+svm                   SVM - Linear Kernel    0.1668  0.0000  0.1668  0.0536
+
+              F1   Kappa     MCC  TT (Sec)
+catboost  0.6665  0.5829  0.5986     1.506
+xgboost   0.6567  0.5764  0.5888     0.051
+rf        0.6569  0.5701  0.5845     0.107
+gbc       0.6551  0.5708  0.5831     0.155
+lightgbm  0.6523  0.5685  0.5791     0.972
+et        0.6552  0.5658  0.5822     0.062
+dt        0.6012  0.5003  0.5166     0.022
+ada       0.4158  0.2912  0.3155     0.039
+knn       0.4110  0.2617  0.2700     0.937
+qda       0.2677  0.2083  0.2509     0.028
+nb        0.2641  0.2029  0.2448     0.024
+ridge     0.1926  0.1665  0.2252     0.032
+lr        0.2808  0.1211  0.1262     0.658
+lda       0.2812  0.1207  0.1259     0.017
+dummy     0.1372  0.0000  0.0000     0.018
+svm       0.0668 -0.0140 -0.0155     0.030
+<catboost.core.CatBoostClassifier object at 0x0000017953FAB3D0>
+interactive(children=(ToggleButtons(description='Plot Type:', icons=('',), options=(('Pipeline Plot', 'pipeline'), ('Hyperparameters', 'parameter'), ('AUC', 'auc'), ('Confusion Matrix', 'confusion_matrix'), ('Threshold', 'threshold'), ('Precision Recall', 'pr'), ('Prediction Error', 'error'), ('Class Report', 'class_report'), ('Feature Selection', 'rfe'), ('Learning Curve', 'learning'), ('Manifold Learning', 'manifold'), ('Calibration Curve', 'calibration'), ('Validation Curve', 'vc'), ('Dimensions', 'dimension'), ('Feature Importance', 'feature'), ('Feature Importance (All)', 'feature_all'), ('Decision Boundary', 'boundary'), ('Lift Chart', 'lift'), ('Gain Chart', 'gain'), ('Decision Tree', 'tree'), ('KS Statistic Plot', 'ks')), value='pipeline'), Output()), _dom_classes=('widget-interact',))
+Processing:   0%|                                                                                                       | 0/7 [00:00<?, ?it/s]Fitting 10 folds for each of 10 candidates, totalling 100 fits
+      Accuracy     AUC  Recall   Prec.      F1   Kappa     MCC
+Fold
+0       0.6000  0.8435  0.6000  0.6325  0.6012  0.4953  0.5016
+1       0.6500  0.9261  0.6500  0.7517  0.6575  0.5570  0.5696
+2       0.6500  0.8361  0.6500  0.7125  0.6486  0.5639  0.5820
+3       0.8000  0.9436  0.8000  0.8333  0.8037  0.7492  0.7563
+4       0.6500  0.8765  0.6500  0.7167  0.6686  0.5484  0.5557
+5       0.8000  0.9701  0.8000  0.8333  0.8010  0.7419  0.7493
+6       0.6500  0.8795  0.6500  0.7143  0.6515  0.5541  0.5669
+7       0.7000  0.9071  0.7000  0.7667  0.6760  0.6203  0.6364
+8       0.6842  0.8382  0.6842  0.7877  0.6665  0.6055  0.6296
+9       0.6842  0.9340  0.6842  0.6474  0.6507  0.6000  0.6152
+Mean    0.6868  0.8955  0.6868  0.7396  0.6825  0.6036  0.6162
+Std     0.0623  0.0453  0.0623  0.0653  0.0629  0.0785  0.0778
+<catboost.core.CatBoostClassifier object at 0x0000017954166C80>
+                 Model  Accuracy     AUC  Recall   Prec.      F1   Kappa     MCC
+0  CatBoost Classifier    0.8063  0.9662  0.8063  0.8145  0.8078  0.7549  0.7563
+   Voc_Jsc_Ratio  Rp_Ps_Ratio  Class  prediction_label  prediction_score
+0      17.340000       1.7264      3                 4            0.3942
+1      21.799999       0.8519      3                 3            0.7040
+2      23.900000       0.4184      3                 3            0.8747
+3      23.570000       0.6839      3                 3            0.8167
+4      25.520000       0.4676      3                 3            0.8878
+                 Model  Accuracy     AUC  Recall   Prec.      F1   Kappa     MCC
+0  CatBoost Classifier    0.8063  0.9662  0.8063  0.8145  0.8078  0.7549  0.7563
+   Voc_Jsc_Ratio  Rp_Ps_Ratio  Class  prediction_label  ...  prediction_score_2  prediction_score_3  prediction_score_4  prediction_score_5
+0      17.340000       1.7264      3                 4  ...              0.2777              0.2196              0.3942              0.0281    
+1      21.799999       0.8519      3                 3  ...              0.1123              0.7040              0.1110              0.0195    
+2      23.900000       0.4184      3                 3  ...              0.0248              0.8747              0.0279              0.0255    
+3      23.570000       0.6839      3                 3  ...              0.0590              0.8167              0.0616              0.0174    
+4      25.520000       0.4676      3                 3  ...              0.0246              0.8878              0.0285              0.0193    
+
+[5 rows x 9 columns]
+Transformation Pipeline and Model Successfully Saved
+Transformation Pipeline and Model Successfully Loaded
+Pipeline(memory=FastMemory(location=C:\Users\seyzu\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('iterative_imputer',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=IterativeImputer(add_indicator=False,
+                                                                 cat_estimator=LGBMClassifier(boosting_type='gbd...
+                                                                 num_initial_strategy='mean',
+                                                                 random_state=123,
+                                                                 sample_posterior=False,
+                                                                 skip_complete=True,
+                                                                 tol=0.001,
+                                                                 verbose=0))),
+                ('balance',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=FixImbalancer(estimator=SMOTE(k_neighbors=5,
+                                                                              n_jobs=None,
+                                                                              random_state=123,
+                                                                              sampling_strategy='auto')))),
+                ('trained_model',
+                 <catboost.core.CatBoostClassifier object at 0x0000017956847F40>)],
+         verbose=False)
+interactive(children=(ToggleButtons(description='Plot Type:', icons=('',), options=(('Pipeline Plot', 'pipeline'), ('Hyperparameters', 'parameter'), ('AUC', 'auc'), ('Confusion Matrix', 'confusion_matrix'), ('Threshold', 'threshold'), ('Precision Recall', 'pr'), ('Prediction Error', 'error'), ('Class Report', 'class_report'), ('Feature Selection', 'rfe'), ('Learning Curve', 'learning'), ('Manifold Learning', 'manifold'), ('Calibration Curve', 'calibration'), ('Validation Curve', 'vc'), ('Dimensions', 'dimension'), ('Feature Importance', 'feature'), ('Feature Importance (All)', 'feature_all'), ('Decision Boundary', 'boundary'), ('Lift Chart', 'lift'), ('Gain Chart', 'gain'), ('Decision Tree', 'tree'), ('KS Statistic Plot', 'ks')), value='pipeline'), Output()), _dom_classes=('widget-interact',))
