@@ -17,13 +17,13 @@ import pandas as pd
 from pycaret.classification import setup, load_model, predict_model, evaluate_model, compare_models, plot_model, tune_model, save_model
 
 # Test setini yükle
-new_data = pd.read_csv('test_set_future_c.csv') 
+new_data = pd.read_csv('test_set_l.csv') 
 
 # Eğitim setini yükle
-data = pd.read_csv('train_set_future_c.csv') 
+data = pd.read_csv('train_set_l.csv') 
 
 # Pycaret setup fonksiyonunu kullanarak otomatik ML setup'ını yap
-s = setup(data, target='Class', session_id=123)
+s = setup(data, target='Class', session_id=123, fix_imbalance=True, imputation_type='iterative')
 
 # En iyi modeli seç ve ekrana yazdır
 best = compare_models()
@@ -60,10 +60,10 @@ predictions_raw = predict_model(tuned_model, data=data, raw_score=True)
 print(predictions_raw.head())
 
 # Modeli kaydet
-save_model(tuned_model, 'my_best_pipeline_future_c')
+save_model(tuned_model, 'my_best_pipeline_l')
 
 # Modeli yükle
-loaded_model = load_model('my_best_pipeline_future_c')
+loaded_model = load_model('my_best_pipeline_l')
 print(loaded_model)
 
 # Modeli değerlendir

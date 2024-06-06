@@ -86,7 +86,7 @@ from pycaret.datasets import get_data
 from pycaret.classification import *
 
 # Veri setini yükle
-data = get_data('future_new')
+data = get_data('latest')
 
 # Otomatik ML setup'ını yap
 s = setup(data, target='Class', session_id=123, fix_imbalance=True, imputation_type='iterative')
