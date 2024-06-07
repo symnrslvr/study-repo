@@ -4,7 +4,7 @@ from pycaret.classification import predict_model, load_model
 
 app = Flask(__name__)
 
-model = load_model('my_best_pipeline_future_n2')
+model = load_model('ML/classification/my_best_pipeline_feature_data')
 
 @app.route('/')
 def index():
@@ -21,9 +21,9 @@ def predict():
     Rp = float(request.form['Rp'])
     Rate = float(request.form['Rate'])
     Temp = float(request.form['Temp'])
-    RpRs = float(request.form['Rp/Rs'])
-    VocJsc = float(request.form['Voc/Jsc'])
-    V2oc = float(request.form['V2oc'])
+    Rp_Ps_Ratio = Rp/Rs
+    Voc_Jsc_Ratio = Voc/Jsc
+    Voc2 = Voc*Voc
 
     new_data = pd.DataFrame({
         'Jsc': [Jsc],
@@ -34,9 +34,9 @@ def predict():
         'Rp': [Rp],
         'Rate': [Rate],
         'Temp': [Temp],
-        'Rp/Rs': [RpRs],
-        'Voc/Jsc': [VocJsc],
-        'V2oc': [V2oc]
+        'Rp_Ps_Ratio': [Rp_Ps_Ratio],
+        'Voc_Jsc_Ratio': [Voc_Jsc_Ratio],
+        'Voc2': [Voc2]
         
     })
 
