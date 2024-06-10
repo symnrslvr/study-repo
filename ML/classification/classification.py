@@ -27,13 +27,15 @@ print(tuned_model)
 
 predictions = predict_model(tuned_model, data=data)
 print(predictions)
+predictions.to_csv('ML/classification/predictions.csv', index=False)
 
 predictions_raw = predict_model(tuned_model, data=data, raw_score=True)
 print(predictions_raw)
+predictions_raw.to_csv('ML/classification/predictions_raw.csv', index=False)
 
-save_model(tuned_model, 'pycaret/classification/my_best_pipeline_feature_data')
+save_model(tuned_model, 'ML/classification/my_best_pipeline_feature_data')
 
-loaded_model = load_model('pycaret/classification/my_best_pipeline_feature_data')
+loaded_model = load_model('ML/classification/my_best_pipeline_feature_data')
 print(loaded_model)
 
 evaluate_model(loaded_model)

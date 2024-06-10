@@ -1,9 +1,9 @@
 import pandas as pd
 
 # CSV dosyasını oku
-df = pd.read_csv("stacking_fault/max_lengths_rate.csv")
+df = pd.read_csv("stacking_fault/max_lengths.csv")
 
-buyutme_hizi_nm_dakika = 40  
+buyutme_hizi_nm_dakika = 200
 
 # Kalınlık (örneğin, 2 mikron)
 kalinhik_mikron = 2  

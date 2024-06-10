@@ -2,9 +2,9 @@ import pandas as pd
 from pycaret.classification import setup, load_model, predict_model, evaluate_model, compare_models, plot_model, tune_model, save_model
 
 
-new_data = pd.read_csv('ML/classification/test_set_wo_feature.csv') 
+new_data = pd.read_csv('ML/classification/test_set_w_feature.csv') 
 
-data = pd.read_csv('ML/classification/train_set_wo_feature.csv') 
+data = pd.read_csv('ML/classification/train_set_w_feature.csv') 
 
 
 s = setup(data, target='Class', session_id=123, fix_imbalance=True, imputation_type='iterative')
@@ -34,9 +34,9 @@ print(predictions)
 predictions_raw = predict_model(tuned_model, data=data, raw_score=True)
 # print(predictions_raw.head())
 
-save_model(tuned_model, 'my_best_pipeline_l')
+save_model(tuned_model, 'ML/classification/my_best_pipeline_feature_data')
 
-loaded_model = load_model('my_best_pipeline_l')
+loaded_model = load_model('ML/classification/my_best_pipeline_feature_data')
 print(loaded_model)
 
 evaluate_model(loaded_model)
